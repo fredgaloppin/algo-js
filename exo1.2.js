@@ -1,8 +1,8 @@
 const readlineSync = require("readline-sync");
 
-	let firstName = readlineSync.question("What's your first name? ");
-	let name = readlineSync.question("What's your name? ");
-	let city = readlineSync.question("Wich city are you come from? ");
+	let firstName = "Dr. Jonathan";
+	let name = "Livingston";
+	let city = "elsewhere";
 	console.log("Your name is "+firstName +" "+ name +" and you live in "+city+".");
 	
   
