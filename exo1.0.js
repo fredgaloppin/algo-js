@@ -1,4 +1,4 @@
-const readlineSync = require("readline-sync");var carré = function (nombre) { return nombre * nombre };
+const readlineSync = require("readline-sync");
 
 	var num1 = parseInt(readlineSync.question("Enter a first number "));
 	var num2 = parseInt(readlineSync.question("Enter a second number "));
