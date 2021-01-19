@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 // -------------------- 1st version--while-------------------
-var i=2;
+var i=0;
 
 while (i<=100) {
 		if (i%2 == 0) {
