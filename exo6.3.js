@@ -40,7 +40,7 @@ for (let index = 0; index < Math.round(catalogue.length/2); index++) {
         if (catalogue[index].collides(catalogue[current])== true) {
             var myString = JSON.stringify(catalogue[index]);
             var myString2 = JSON.stringify(catalogue[current]);
-            console.log(myString+myString2+);
+            console.log(myString+myString2);
         }  
     }
 }
