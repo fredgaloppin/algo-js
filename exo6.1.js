@@ -3,8 +3,8 @@ const readlineSync = require("readline-sync");
 class Circle { 
 	constructor(xPos, YPos, radius) { this.xPos = xPos; this.YPos = YPos; this.radius = radius } 
 	move (xOffset, yOffset) {
-		this.xPos += xOffset
-		this.YPos += yOffset
+		this.xPos += xOffset;
+		this.YPos += yOffset;
 	}
 	get surface() {
 		return Math.PI*this.radius*this.radius

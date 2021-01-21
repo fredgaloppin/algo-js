@@ -23,28 +23,31 @@ class Rectangle {
 var catalogue = [];
 // create 1000 random rectangle and push into array "catalogue"
 let i = 1;
-while (i <= 1000) {
+while (i <= 50) {
     rect = new Rectangle (
         i,
-        Math.floor(Math.random() * 500 ) + 1,
-        Math.floor(Math.random() * 500 ) + 1,
-        Math.floor(Math.random() * 300 ) + 1,
-        Math.floor(Math.random() * 300 ) + 1
+        Math.floor(Math.random() * 1000 ) + 1,
+        Math.floor(Math.random() * 1000 ) + 1,
+        Math.floor(Math.random() * 200 ) + 1,
+        Math.floor(Math.random() * 200 ) + 1
     )
     i += 1;
     catalogue.push(rect); 
 }
 // loop in a loop to check for collisions among catalogue 
-for (let index = 0; index < Math.round(catalogue.length/2); index++) {
-    for (let current = index+1; current < catalogue.length; current++) {
+var count = 0
+for (let index = 0; index < catalogue.length; index++) {
+    for (let current = index+1; current < catalogue.length; current++) {		
         if (catalogue[index].collides(catalogue[current])== true) {
+			count += 1
             var myString = JSON.stringify(catalogue[index]);
-            var myString2 = JSON.stringify(catalogue[current]);
-            console.log(myString+myString2);
-        }  
+			var myString2 = JSON.stringify(catalogue[current]);
+			console.log(`${myString}${'\r'}`);
+			console.log(`${'-'}${myString2}${'\r'}`);
+		}  
     }
 }
-
+console.log(count+" collisions.")
 
 
 
